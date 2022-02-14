@@ -1,0 +1,59 @@
+values :
+
+INSERT INTO Genre (Categorie)
+VALUES
+("Horreur"),
+("Fantaisie"),
+("Policier"),
+("Science-Fiction"),
+("Romance"),
+("Drame")
+
+INSERT INTO Emprunteur (Id_emprunteur, Nom_emprunteur, prenom_emprunteur, Nombre_livre_emprunte)
+VALUES
+("Gamez", "Jean-michel", 2),
+("Vincourt", "Bernard", 0),
+("Michaelis", "Harry", 1),
+("Wilfert", "Diego", 0),
+("Michel", "Fanny", 0),
+("Ellul", "Lorenzo", 0),
+("Dupin", "Flavie", 0)
+
+INSERT INTO Editeur(Nom_editeur, Pays_editeur, Adresse_editeur)
+VALUES
+("Flamant Rose", "Belgique", "304 place des haricots"),
+("Galimard Do", "Syrie", "506 avenue de la rivière"),
+("Fortamtam", "France", "404 Boulevard du créateur"),
+("Achète", "Russie", "Rue de la Broue Ette")
+
+INSERT INTO Auteur(Nom_auteur, Prenom_auteur, Pays_auteur)
+VALUES
+("De La Cour", "Thery", "France"),
+("Dubine", "Stella", "Angleterre"),
+("Tigret", "Diego", "Espagne"),
+("Malfoy", "Draco", "Poudlard"),
+("La Croix", "Valentin", "France")
+
+INSERT INTO Livre(Titre, Prix, Id_genre, Id_editeur)
+VALUES
+("La Belle et le serpent", 12, 5, 1),
+("Le Collant", 10, 1, 2),
+("Le fou du roller", 5, 4, 3),
+("La poupée", 9, 1, 3),
+("Le grand prince", 350, 2, 1),
+("Le chien de la voisine", 2, 6, 3)
+
+INSERT INTO Ecrit_par(Id_livre, Id_auteur)
+VALUES
+(1, 2),
+(2, 5),
+(3, 1),
+(4, 1),
+(5, 2),
+(6, 4)
+
+INSERT INTO Emprunter_par(Id_livre, Id_emprunteur, Emprunt_date_debut, Statut)
+VALUES
+(1, 1, '2015/05/22', 0), 
+(5, 1, '2018/20/05', 0), 
+(2, 3, '2021/01/05', 1)
