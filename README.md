@@ -1,5 +1,5 @@
 # Data_base
-Project perso to familiarise with SQL and data_base
+Project perso to acquaint myself with SQL and data base.
 
 Requierements : 
 - install python3
